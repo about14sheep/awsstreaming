@@ -15,7 +15,7 @@ You will also need to download a HD .mp4 video file. I used [this awesome coffee
 ## A quick note
 
 This is an extremely simple streaming solution to show the power of the NodeJS Readable class in the standard Stream module. 
-Although the `SmartStream` class is production ready, the express server and streaming implementation is not.
+Although the `SmartStream` class is extremely solid, the express server and streaming implementation is not.
 
 After the reception I have recieved from the blog, I decided I would make this test project to help people understand how to use this streaming solution for video.
 For a second I thought I would do an entire blog, and implement the `SmartStream` proper, alas I am lazy. If I am going to do another blog it won't be about writing a frontend, it's just not my cup of tea.
