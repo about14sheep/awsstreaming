@@ -1,6 +1,14 @@
 # awsstreaming
 The easiest HD video AWS S3 streaming app
 
+## We are official now!
+
+This package now uses the new and imporved `s3-readstream` npm package!! I left the original "blog version" file in so you can still how everything works. But if you want to use this in one of your own projects its even easier!
+
+https://www.npmjs.com/package/s3-readstream
+
+## Original project
+
 This is a project I made to substitute a blog I wrote on Dev Community. Be sure to read the blog and let me know how you like it!
 
 [Streaming file from AWS S3 using NodeJS Stream API with Typescript](https://dev.to/about14sheep/streaming-data-from-aws-s3-using-nodejs-stream-api-and-typescript-3dj0)
