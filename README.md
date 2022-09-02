@@ -48,7 +48,7 @@ S3_KEY=<Your video file name (leave off the .mp4 extension)>
 
 ## Download the packages
 
-We are only using the `aws-sdk`, `express`, and `dotenv` packages to keep it incredibly simple
+We are only using the `aws-sdk`, `express`, `dotenv`, and, of course, the `s3-readstream` packages to keep it incredibly simple
 
 Run the install command:
 ```
