@@ -1,13 +1,13 @@
 import * as AWS from "aws-sdk";
 import {s3Env} from "../config";
-import {SmartStream} from "./SmartStream";
+import {S3ReadStream} from 's3-readstream';
 
-export default async function createAWSStream(): Promise<SmartStream> {
+export default async function createAWSStream(): Promise<S3ReadStream> {
     return new Promise((resolve, reject) => {
         const bucketParams = {
             Bucket: s3Env.bucket,
             Key: s3Env.key + '.mp4'
-        };
+        }
 
         try {
             const s3 = new AWS.S3({
@@ -19,8 +19,15 @@ export default async function createAWSStream(): Promise<SmartStream> {
                 if (error) {
                     throw error
                 };
+                
+                const options = {
+                  parameters: bucketParams,
+                  s3,
+                  maxLength: data.ContentLength,
+                  byteRange: 1024 * 1024 * 5
+                };
 
-                const stream = new SmartStream(bucketParams, s3, data.ContentLength);
+                const stream = new S3ReadStream(options);
 
                 resolve(stream);
             })
