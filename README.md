@@ -3,9 +3,11 @@ The easiest HD video AWS S3 streaming app
 
 ## We are official now!
 
-This package now uses the new and imporved `s3-readstream` npm package!! I left the original "blog version" file in so you can still how everything works. But if you want to use this in one of your own projects its even easier!
+This package now uses the new and imporved `s3-readstream` npm package!! I left the [original "blog version" file](https://github.com/about14sheep/awsstreaming/blob/master/src/streamClient/SmartStream.ts) in so you can still how everything works. But if you want to use this in one of your own projects its even easier!
 
 https://www.npmjs.com/package/s3-readstream
+
+There have also been some improvments, check it out!
 
 ## Original project
 
